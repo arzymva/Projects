@@ -8,7 +8,7 @@ This README contains details of SQL projects: Popular Arts, Spotify Data Analysi
 
 ### Project 1: Popular Arts
 
-This project analyzes a popular arts dataset containing 7 tables. I performed analyses using queries that include joins, CTEs, window functions, grouping sets, etc.
+This project analyzes a popular arts dataset containing 7 tables. I performed analysis using queries that include joins, CTEs, window functions, grouping sets, etc.
 
 #### Sample Query
 
