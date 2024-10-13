@@ -30,9 +30,13 @@ GROUP BY
 ORDER BY total_works DESC;
 
 ```
+---
 
 # Project 2 : Spotify data analysis.
 This project contains analysis of a spotify dataset. I made analysis with the use of queries containing case statements, CTEs, window functions etc.
+
+#### Sample Query
+
 Here is the sample query from my project, that i wrote for finding top 5 most-viewed tracks for each artist with the use of window functions.
 
 ```sql
@@ -49,8 +53,17 @@ order by 2, 3 desc
 select * from artist_ranking
 where rank <= 5;
 
+```
+---
+
 # Project 3 : Covid dataset analysis.
-This is a project i made during the early period of covid-19 pandemic, analyzing the covid dataset. I made analysis with the use of queries containing, CTEs, window functions, views, temporary tables etc. Here is the sample query from my project, that i wrote for ceating view for storing data for later visualizations.
+This is a project i made during the early period of covid-19 pandemic, analyzing the covid dataset. I made analysis with the use of queries containing, CTEs, window functions, views, temporary tables etc. 
+
+#### Sample Query
+
+Here is the sample query from my project, that i wrote for ceating view for storing data for later visualizations.
+
+```sql
 
 CREATE VIEW PercentPopVaccinated AS 
 SELECT death.continent, 
