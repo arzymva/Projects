@@ -3,6 +3,7 @@
 This is a project about the analysis of popular arts dataset, containing 7 tables. I made analysis with the use of queries containing joins, CTEs, window functions, grouping sets etc.
 Here is the sample query from my project, that i wrote to find relationship between artists, their nationalaties and works with the use of grouping sets.
 
+```sql
 select
     nationality, 
     full_name, 
