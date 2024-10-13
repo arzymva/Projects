@@ -18,8 +18,6 @@ grouping sets (
 	)
 order by total_works desc;
 
-\`\`\`
-
 # Project 2 : Spotify data analysis.
 This project contains analysis of a spotify dataset. I made analysis with the use of queries containing case statements, CTEs, window functions etc.
 Here is the sample query from my project, that i wrote for finding top 5 most-viewed tracks for each artist with the use of window functions.
