@@ -1,22 +1,33 @@
-# SqlProjects
-# Project 1: Popular Arts.
-This is a project about the analysis of popular arts dataset, containing 7 tables. I made analysis with the use of queries containing joins, CTEs, window functions, grouping sets etc.
-Here is the sample query from my project, that i wrote to find relationship between artists, their nationalaties and works with the use of grouping sets.
+# SQL Projects
+
+## Project Overview
+
+This README contains details of SQL projects: Popular Arts, Spotify Data Analysis, and COVID Dataset Analysis. Below are the descriptions and sample queries for each project.
+
+---
+
+### Project 1: Popular Arts
+
+This project analyzes a popular arts dataset containing 7 tables. I performed analyses using queries that include joins, CTEs, window functions, grouping sets, etc.
+
+#### Sample Query
+
+Here is a sample query that finds the relationship between artists, their nationalities, and their works using grouping sets:
 
 ```sql
-select
+SELECT
     nationality, 
     full_name, 
-    count(work_id) as total_works
-from works
-join artists on works.artist_id = artists.artist_id
-group by
-grouping sets (
-    (nationality),         -- total works by nationality
-    (full_name),         -- total works by artist name
-    (nationality, full_name) -- total works by nationality and artist
-	)
-order by total_works desc;
+    COUNT(work_id) AS total_works
+FROM works
+JOIN artists ON works.artist_id = artists.artist_id
+GROUP BY
+    GROUPING SETS (
+        (nationality),         -- total works by nationality
+        (full_name),          -- total works by artist name
+        (nationality, full_name) -- total works by nationality and artist
+    )
+ORDER BY total_works DESC;
 
 # Project 2 : Spotify data analysis.
 This project contains analysis of a spotify dataset. I made analysis with the use of queries containing case statements, CTEs, window functions etc.
