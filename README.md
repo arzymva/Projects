@@ -29,7 +29,7 @@ GROUP BY
     )
 ORDER BY total_works DESC;
 
-```sql
+```
 
 # Project 2 : Spotify data analysis.
 This project contains analysis of a spotify dataset. I made analysis with the use of queries containing case statements, CTEs, window functions etc.
